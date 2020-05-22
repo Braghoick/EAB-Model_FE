@@ -1,0 +1,16 @@
+// Custom.scss
+
+// Aqui se modifica con sass de forma global
+
+$body-bg: #000;
+$body-color: #fff;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//Aqui comienza el edit .css
+
+body{
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
