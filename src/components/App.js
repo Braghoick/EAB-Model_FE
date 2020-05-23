@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
+import CarouselNav from './CarouselNav';
 import {Button, Modal} from 'react-bootstrap';
 
 //debe existir siempre un metodo render o un return, en el caso de ser stateless
@@ -10,6 +11,14 @@ class App extends React.Component{
 	render(){
 		
 		return (
+      // agregar el carrusel donde deba estar
+			<React.Fragment>
+				<HeaderNav />
+				<HeroSlider />
+				<CarouselNav />
+			</React.Fragment>
+      // agregar el carrusel donde deba estar
+
 			
 			<div className="app">
 				<section id="landing">

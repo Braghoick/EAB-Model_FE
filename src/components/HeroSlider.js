@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel'
 const HeroSlider = () =>{
 		return (
                <Carousel>
+                    
                     <Carousel.Item>
                     <img
                          className="d-block w-100"
@@ -39,6 +40,7 @@ const HeroSlider = () =>{
                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                     </Carousel.Item>
+                    
                </Carousel>
 
 );
