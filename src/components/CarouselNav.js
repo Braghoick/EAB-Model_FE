@@ -5,15 +5,16 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const CarouselNav = () =>{
      return (
+       <div className="container mt-5">
           <Carousel id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
               
                <Carousel.Item>
                     <div className="row">
                          <div className="col-md-3">
-                              <div className="card mb-2">
+                              <div className="card bg-warning mb-2">
                                    <img className="card-img-top"
                                         src="https://lastfm.freetls.fastly.net/i/u/300x300/b6c8a3274bc147f3c7cbd278116dfd46.jpg"
-                                        alt="Card image cap1"
+                                        alt="Card cap1"
                                    />
                                    <div className="card-body">
                                         <h4 className="card-title" style={{color:'black'}}>Card title</h4>
@@ -23,10 +24,10 @@ const CarouselNav = () =>{
                          </div>
 
                          <div className="col-md-3">
-                              <div className="card mb-2">
+                              <div className="card bg-warning mb-2">
                                    <img className="card-img-top"
                                         src="https://lastfm.freetls.fastly.net/i/u/300x300/b6c8a3274bc147f3c7cbd278116dfd46.jpg"
-                                        alt="Card image cap1"
+                                        alt="Card cap2"
                                    />
                                    <div className="card-body">
                                         <h4 className="card-title" style={{color:'black'}}>Card title</h4>
@@ -36,10 +37,23 @@ const CarouselNav = () =>{
                          </div>
 
                          <div className="col-md-3">
-                              <div className="card mb-2">
+                              <div className="card bg-warning mb-2">
                                    <img className="card-img-top"
                                         src="https://lastfm.freetls.fastly.net/i/u/300x300/b6c8a3274bc147f3c7cbd278116dfd46.jpg"
-                                        alt="Card image cap1"
+                                        alt="Card cap3"
+                                   />
+                                   <div className="card-body">
+                                        <h4 className="card-title" style={{color:'black'}}>Card title</h4>
+                                        <p className="card-text" style={{color:'black'}}>Texto de relleno</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div className="col-md-3">
+                              <div className="card bg-warning mb-2">
+                                   <img className="card-img-top"
+                                        src="https://lastfm.freetls.fastly.net/i/u/300x300/b6c8a3274bc147f3c7cbd278116dfd46.jpg"
+                                        alt="Card cap3"
                                    />
                                    <div className="card-body">
                                         <h4 className="card-title" style={{color:'black'}}>Card title</h4>
@@ -53,10 +67,10 @@ const CarouselNav = () =>{
                <Carousel.Item>
                     <div className="row">
                          <div className="col-md-3">
-                              <div className="card mb-2">
+                              <div className="card bg-warning mb-2">
                                    <img className="card-img-top"
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7vXOTBs84LzgVamHBOEfvHpP-zgNLfr71hSpGVTeQXtG_GpUH&usqp=CAU"
-                                        alt="Card image cap2"
+                                        alt="Card cap1 1"
                                    />
                                    <div className="card-body">
                                         <h4 className="card-title" style={{color:'black'}}>Card title</h4>
@@ -64,40 +78,50 @@ const CarouselNav = () =>{
                                    </div>
                               </div>
                          </div>
-                    </div>
 
-                    <div className="row">
                          <div className="col-md-3">
-                              <div className="card mb-2">
+                              <div className="card bg-warning mb-2">
                                    <img className="card-img-top"
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7vXOTBs84LzgVamHBOEfvHpP-zgNLfr71hSpGVTeQXtG_GpUH&usqp=CAU"
-                                        alt="Card image cap2"
-                                   />
+                                        alt="Card cap2 2"
+                                        />
                                    <div className="card-body">
                                         <h4 className="card-title" style={{color:'black'}}>Card title</h4>
                                         <p className="card-text" style={{color:'black'}}>Texto de relleno</p>
                                    </div>
                               </div>
                          </div>
-                    </div>
 
-                    <div className="row">
                          <div className="col-md-3">
-                              <div className="card mb-2">
+                              <div className="card bg-warning mb-2">
                                    <img className="card-img-top"
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7vXOTBs84LzgVamHBOEfvHpP-zgNLfr71hSpGVTeQXtG_GpUH&usqp=CAU"
-                                        alt="Card image cap2"
-                                   />
+                                        alt="Card cap3 3"
+                                        />
                                    <div className="card-body">
                                         <h4 className="card-title" style={{color:'black'}}>Card title</h4>
                                         <p className="card-text" style={{color:'black'}}>Texto de relleno</p>
                                    </div>
                               </div>
                          </div>
-                    </div>
+
+                         <div className="col-md-3">
+                              <div className="card bg-warning mb-2">
+                                   <img className="card-img-top"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7vXOTBs84LzgVamHBOEfvHpP-zgNLfr71hSpGVTeQXtG_GpUH&usqp=CAU"
+                                        alt="Card cap3 3"
+                                        />
+                                   <div className="card-body">
+                                        <h4 className="card-title" style={{color:'black'}}>Card title</h4>
+                                        <p className="card-text" style={{color:'black'}}>Texto de relleno</p>
+                                   </div>
+                              </div>
+                         </div>
+                </div>
                </Carousel.Item>
 
           </Carousel>
+        </div>
      );
 }
 
