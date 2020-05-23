@@ -16,7 +16,6 @@ class App extends React.Component{
 				<HeaderNav />
 				<HeroSlider />
 				<CarouselNav />
-			</React.Fragment>
       // agregar el carrusel donde deba estar
 
 			
@@ -41,7 +40,7 @@ class App extends React.Component{
 				<section id="aboutUs">
 					<div className="container">
 						<Button>Hola</Button>
-						<Modal show={true}>
+							<Modal show={false}>
 							<Modal.Header>
 								<h1>Hola</h1>
 							</Modal.Header>
@@ -53,6 +52,7 @@ class App extends React.Component{
 				</section>
 				
 			</div>
+			</React.Fragment>
 		);
 	}
 }
