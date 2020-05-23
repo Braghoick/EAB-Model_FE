@@ -3,7 +3,7 @@ import React from 'react';
 const HeaderNav = () =>{
 		return (
                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand" href="/">
+               <a className="navbar-brand" href="/">
                     <img src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top mr-2" alt="" />
                          Bootstrap
                </a>
@@ -16,7 +16,7 @@ const HeaderNav = () =>{
                      <a className="nav-link" href="/">Features</a>
                    </li>
                    <li className="nav-item">
-                     <a class="nav-link" href="/">Pricing</a>
+                     <a className="nav-link" href="/">Pricing</a>
                    </li>
                    
                  </ul>
