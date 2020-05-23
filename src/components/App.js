@@ -1,18 +1,17 @@
  //siempre debe ir
 import React from 'react';
+import HeaderNav from './HeaderNav';
+import HeroSlider from './HeroSlider';
 
 //debe existir siempre un metodo render o un return, en el caso de ser stateless
 class App extends React.Component{
 
-	state = {
-	};
-
 	render(){
 		return (
-				<div>
-					Hello World !!!
-				</div>
-
+			<React.Fragment>
+				<HeaderNav />
+				<HeroSlider />
+			</React.Fragment>
 		);
 	}
 }
