@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
-import './SliderParent.css';
+import '../scss/SliderParent.scss';
 
 class SliderParent extends React.Component {
     render() {

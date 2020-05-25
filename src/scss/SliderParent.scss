@@ -1,5 +1,17 @@
+// Custom.scss
+
+// Aqui se modifica con sass de forma global
+
+$body-bg: #000;
+$body-color: #fff;
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+//Aqui comienza el edit .css
 .Slider {
-	width: 67%;/*cantidad de carros que se muestran horizontalmente */
+	width: 67%;/*cantidad de items que se muestran horizontalmente */
 	overflow: hidden;
 	margin: auto;
 	padding: 1rem;
