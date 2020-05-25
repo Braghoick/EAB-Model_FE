@@ -2,6 +2,7 @@
 import React from 'react';
 import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
+import SliderParent from "./SliderParent";
 import CarouselNav from './CarouselNav';
 
 //debe existir siempre un metodo render o un return, en el caso de ser stateless
@@ -12,7 +13,8 @@ class App extends React.Component{
 			<React.Fragment>
 				<HeaderNav />
 				<HeroSlider />
-				<CarouselNav />
+				<SliderParent />
+				{/* <CarouselNav /> */}
 			</React.Fragment>
 		);
 	}

@@ -1,0 +1,60 @@
+.Slider {
+	width: 70%;/*cantidad de carros que se muestran horizontalmente */
+	overflow: hidden;
+	margin: auto;
+	padding: 1rem;
+}
+.slider-container { /*El slider es un WRAP de cards con display felx */
+ /* if you want to have a scrollbar, you can add overflow here */
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0rem 2rem;
+	padding: 3px;
+ 	scroll-behavior: smooth;
+}
+.slider-wrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.btn {
+	font-size: 3rem;
+	position: absolute;
+	cursor: pointer;
+	color:white;
+	text-align: center;
+	/* border-radius: 50%; */
+	/* background: #59eb97; */
+	/* box-shadow: 0 0 6.1px 0.9px rgb(194, 192, 192); */
+}
+.btn:hover{
+	color:rgb(105, 105, 252);
+}
+.prev { /*Flecha izquierda*/
+	left: 12rem;
+}
+.next { /*Flecha derecha*/
+	right: 12rem;
+}
+.disable { /*Cuando no puede desplazar más el boton cambia a disable*/
+	opacity: 0.2;
+	pointer-events: none;
+	color: gray;
+}
+.CardSlider {
+	background: white;
+	text-align: center;
+	padding: 10px 24px;
+	width: 100%;
+	margin: 10px;
+	border-radius: 10px;
+}
+.card-img{
+    width: 256px;
+    height: 144px;
+}
+.card-title, .card-text{
+    color: black;
+}
