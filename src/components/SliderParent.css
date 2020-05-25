@@ -1,5 +1,5 @@
 .Slider {
-	width: 70%;/*cantidad de carros que se muestran horizontalmente */
+	width: 67%;/*cantidad de carros que se muestran horizontalmente */
 	overflow: hidden;
 	margin: auto;
 	padding: 1rem;
@@ -16,7 +16,7 @@
 }
 .slider-wrapper {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
 }
 .btn {
@@ -30,13 +30,13 @@
 	/* box-shadow: 0 0 6.1px 0.9px rgb(194, 192, 192); */
 }
 .btn:hover{
-	color:rgb(105, 105, 252);
+	color: yellow;
 }
 .prev { /*Flecha izquierda*/
-	left: 12rem;
+	left: 14rem;
 }
 .next { /*Flecha derecha*/
-	right: 12rem;
+	right: 14rem;
 }
 .disable { /*Cuando no puede desplazar más el boton cambia a disable*/
 	opacity: 0.2;
@@ -46,14 +46,15 @@
 .CardSlider {
 	background: white;
 	text-align: center;
-	padding: 10px 24px;
+	padding: 0px 0px 10px;
 	width: 100%;
-	margin: 10px;
+	margin: 10px 27px;
 	border-radius: 10px;
 }
 .card-img{
     width: 256px;
-    height: 144px;
+	height: 144px;
+	border-radius: 4% 4% 0% 0%;
 }
 .card-title, .card-text{
     color: black;
