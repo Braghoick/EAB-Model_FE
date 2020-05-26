@@ -2,8 +2,11 @@
 import React, { useState } from 'react';
 import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
-import CarouselNav from './CarouselNav';
+import SliderParent from "./SliderParent";
+import HeaderNav from './HeaderNav';
+import HeroSlider from './HeroSlider';
 import {Button, Modal} from 'react-bootstrap';
+
 
 //debe existir siempre un metodo render o un return, en el caso de ser stateless
 class App extends React.Component{
@@ -13,9 +16,16 @@ class App extends React.Component{
 		return (
       // agregar el carrusel donde deba estar
 			<React.Fragment>
-				<HeaderNav />
-				<HeroSlider />
-				<CarouselNav />
+				<section class="landing">
+					<HeaderNav fixed="top"/>
+					<HeroSlider />
+				</section>
+				<section className="destacados">
+					<div className="info">
+					<h1 className="text-center">Destacados</h1>
+					<SliderParent />
+					</div>
+				</section>
 			</React.Fragment>
       // agregar el carrusel donde deba estar
 

@@ -3,40 +3,40 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const HeroSlider = () =>{
 		return (
-               <Carousel>
+               <Carousel class>
                     
                     <Carousel.Item>
                     <img
                          className="d-block w-100"
-                         src="https://odesza.com/wp-content/uploads/2017/08/ODESZA-Backgrounds-Desktop-1080.jpg"
+                         src="https://raceandshop.com.mx/wp-content/uploads/2019/05/AE8.jpg"
                          alt="First slide"
                     />
                     <Carousel.Caption>
-                         <h3>First slide label</h3>
-                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                         <h3>Consulta los mejores autos</h3>
+                         <p>Todo lo que buscas sobre autos</p>
                     </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                     <img
                          className="d-block w-100"
-                         src="https://s1.1zoom.me/big3/215/Painting_Art_Roads_Sunrises_and_sunsets_Sun_529517_1920x1080.jpg"
+                         src="https://s1.1zoom.me/big0/208/Ferrari_Sunrises_and_442416.jpg"
                          alt="Second slide"
                     />
 
                     <Carousel.Caption>
-                         <h3>Second slide label</h3>
+                         <h3>La manera más rápida de informarte</h3>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                     <img
                          className="d-block w-100"
-                         src="https://s1.1zoom.me/big7/642/Denmark_Scenery_Sunrises_and_sunsets_Rivers_Sky_513662_1920x1080.jpg"
+                         src="https://a-static.besthdwallpaper.com/negro-ford-mustang-de-coches-papel-pintado-3440x1440-26074_15.jpg"
                          alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                         <h3>Third slide label</h3>
+                         <h3>Todo sobre autos</h3>
                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                     </Carousel.Item>
@@ -45,6 +45,7 @@ const HeroSlider = () =>{
 
 );
 }
+
 
 export default HeroSlider;
 
