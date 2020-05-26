@@ -9,7 +9,9 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Aqui comienza el edit .css
-
+*{
+    font-family: 'Roboto', sans-serif;
+}
 .body{
     padding: 0px;
 }
@@ -24,6 +26,9 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
     height: 100vh;
 }
 
+.info{
+    padding-top: 10%;
+}
 .slider{
 	width: 67%;/*cantidad de items que se muestran horizontalmente */
 	overflow: hidden;
