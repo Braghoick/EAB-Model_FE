@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Aqui se crea el header nav para moverse entre las pantallas
+
 const HeaderNav = () =>{
 		return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light  navbar-fixed-top">
@@ -23,6 +25,6 @@ const HeaderNav = () =>{
       </nav>
 		);
 }  
-  
+
 //siempre se tiene que exportar
 export default HeaderNav;
