@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
 import SliderParent from "./SliderParent";
-import HeaderNav from './HeaderNav';
-import HeroSlider from './HeroSlider';
 import {Button, Modal} from 'react-bootstrap';
 
 
@@ -24,34 +22,18 @@ class App extends React.Component{
 					<div className="info">
 					<h1 className="text-center">Destacados</h1>
 					<SliderParent />
-					</div>
-				</section>
-			</React.Fragment>
-      // agregar el carrusel donde deba estar
 
-			
-			<div className="app">
-				<section id="landing">
-					<div className="container">
-						<React.Fragment>
-							<HeaderNav />
-							<HeroSlider />
-						</React.Fragment>
-					</div>
-				</section>
-				<section id="mostViewed">
-					<div className="container">
-						<div className="container">
-							<React.Fragment>
-								<HeroSlider />
-							</React.Fragment>
-						</div>
-					</div>
-				</section>
-				<section id="aboutUs">
-					<div className="container">
-						<Button>Hola</Button>
-						<Modal show={true}>
+					{/* ****************************************** */}
+					{/*
+					
+						Pasar este modal a el carrusel para que cada elelmento lo tenga y sea diferenteen cada uno
+					
+					*/}
+
+
+
+					<Button>Hola</Button>
+						<Modal show={false}>
 							<Modal.Header>
 								<h1>Hola</h1>
 							</Modal.Header>
@@ -59,10 +41,35 @@ class App extends React.Component{
 								Este es el cuerpo
 							</Modal.Body>
 						</Modal>
+					{/* ************************************************** */}
 					</div>
 				</section>
-				
-			</div>
+
+			
+			{/* <div className="app">
+				<section id="landing">
+					<div className="container">
+						<React.Fragment>
+							<HeaderNav />
+							<HeroSlider />
+						</React.Fragment>
+					</div>
+				</section> 
+				</div>*/}
+				{/* <section id="mostViewed">
+					<div className="container">
+						<div className="container">
+							<React.Fragment>
+								<HeroSlider />
+							</React.Fragment>
+						</div>
+					</div>
+				</section> */}
+				{/* <section id="aboutUs">
+					<div className="container">
+					</div>
+				</section> */}
+			</React.Fragment>
 		);
 	}
 }
