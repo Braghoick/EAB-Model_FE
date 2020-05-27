@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
 import SliderParent from "./SliderParent";
-import HeaderNav from './HeaderNav';
-import HeroSlider from './HeroSlider';
 import {Button, Modal} from 'react-bootstrap';
 
 
@@ -26,11 +24,9 @@ class App extends React.Component{
 					<SliderParent />
 					</div>
 				</section>
-			</React.Fragment>
-      // agregar el carrusel donde deba estar
 
 			
-			<div className="app">
+			{/* <div className="app">
 				<section id="landing">
 					<div className="container">
 						<React.Fragment>
@@ -38,8 +34,9 @@ class App extends React.Component{
 							<HeroSlider />
 						</React.Fragment>
 					</div>
-				</section>
-				<section id="mostViewed">
+				</section> 
+				</div>*/}
+				{/* <section id="mostViewed">
 					<div className="container">
 						<div className="container">
 							<React.Fragment>
@@ -47,11 +44,11 @@ class App extends React.Component{
 							</React.Fragment>
 						</div>
 					</div>
-				</section>
-				<section id="aboutUs">
+				</section> */}
+				{/* <section id="aboutUs">
 					<div className="container">
 						<Button>Hola</Button>
-						<Modal show={true}>
+						<Modal show={false}>
 							<Modal.Header>
 								<h1>Hola</h1>
 							</Modal.Header>
@@ -60,9 +57,9 @@ class App extends React.Component{
 							</Modal.Body>
 						</Modal>
 					</div>
-				</section>
+				</section> */}
 				
-			</div>
+			</React.Fragment>
 		);
 	}
 }

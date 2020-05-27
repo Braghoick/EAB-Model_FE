@@ -25,7 +25,7 @@ const HeroSlider = () =>{
 
                     <Carousel.Caption>
                          <h3>La manera más rápida de informarte</h3>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                         <p>Todo lo que buscas sobre autos</p>
                     </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -37,7 +37,7 @@ const HeroSlider = () =>{
 
                     <Carousel.Caption>
                          <h3>Todo sobre autos</h3>
-                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                         <p>Todo lo que buscas sobre autos</p>
                     </Carousel.Caption>
                     </Carousel.Item>
                     
