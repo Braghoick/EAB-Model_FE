@@ -2,8 +2,8 @@ import React from "react";
 
 class Slider extends React.Component {
     
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             prevDisable: true,
             nextDisable: this.refs && this.refs.offsetWidth >= this.refs.scrollWidth ? true : false
