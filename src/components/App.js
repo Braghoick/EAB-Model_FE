@@ -67,10 +67,8 @@ class App extends React.Component{
 				</section> */}
 				{/* <section id="aboutUs">
 					<div className="container">
-						
 					</div>
 				</section> */}
-				
 			</React.Fragment>
 		);
 	}
