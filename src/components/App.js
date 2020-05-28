@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Componentes necesarios para mostrar la pagina
 import HeaderNav from './HeaderNav';
@@ -28,7 +28,7 @@ class App extends React.Component{
 				</section>
 
 			</React.Fragment>
-			
+
 		);
 	}
 }
