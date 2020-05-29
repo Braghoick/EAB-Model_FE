@@ -26,6 +26,7 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "9.5 Millones",
+        extra: "Vehiculo cuenta con radio AUX/USB/BT de pantalla. Aros de lujo y trae llantas nuevas no cambio, solo vendo, ando buscando pick up mas moderna, se da vuelto a favor.",
       },
       {
         id: 2,
