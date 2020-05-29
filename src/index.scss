@@ -91,7 +91,7 @@ $body-color: rgb(255, 255, 255); /*color de textos global*/
 }
 
 .modal-item{
-  height: 90vh;
+  // height: 90vh;
   margin: 0 2vh;
   background-size: cover;
 }
@@ -99,7 +99,7 @@ $body-color: rgb(255, 255, 255); /*color de textos global*/
 
 
 .contained-modal-multimedia{
-  height: 90vh;
+  // height: 90vh;
   margin-left: 2vh;
   margin-right: 4vh;
   overflow: hidden;
@@ -142,11 +142,6 @@ $body-color: rgb(255, 255, 255); /*color de textos global*/
     display: flex;
     flex-direction: column;
   }
-}
-
-.container-video{
-  height: 81vh;
-  width: 70vw;
 }
 
 .slider {
@@ -427,7 +422,6 @@ $body-color: rgb(255, 255, 255); /*color de textos global*/
     }
 
     .contained-modal-multimedia{
-      height: 35vh;
       margin-left: 0vh;
       margin-right: 2vh;
       overflow: hidden;
@@ -435,12 +429,6 @@ $body-color: rgb(255, 255, 255); /*color de textos global*/
         opacity: 0%;
       }
     }
-
-    .container-video{
-      height: 30vh;
-      width: 60vw;
-    }
-
     .slider {
       width: 83vw; /*cantidad de items que se muestran horizontalmente */
       overflow: hidden;
