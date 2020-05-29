@@ -106,11 +106,11 @@ $body-color: rgb(255, 255, 255); /*color de textos global*/
   .carousel-indicators{
     opacity: 0%;
   }
-}
-.carousel-control-prev,
-.carousel-control-next{
-  height: 36.8vh;
-  width: -70vw;
+  .carousel-control-prev,
+  .carousel-control-next{
+    height: 36.8vh;
+    width: -70vw;
+  }
 }
 
 .btn-modal {
