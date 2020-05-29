@@ -420,6 +420,15 @@ $body-color: rgb(255, 255, 255); /*color de textos global*/
       margin-top: 3rem;
     }
 
+    .contained-modal-multimedia{
+      height: 35vh;
+      margin-left: 2vh;
+      margin-right: 4vh;
+      overflow: hidden;
+      .carousel-indicators{
+        opacity: 0%;
+      }
+    }
     .slider {
       width: 83vw; /*cantidad de items que se muestran horizontalmente */
       overflow: hidden;
