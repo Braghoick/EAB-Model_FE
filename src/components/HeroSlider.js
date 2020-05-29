@@ -1,5 +1,6 @@
+
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
 
 const HeroSlider = () =>{
 		return (
@@ -62,8 +63,26 @@ const HeroSlider = () =>{
                     </Carousel.Item>  
                </Carousel>
 
-);
-}
+          <Carousel.Caption>
+            <h3>La manera más rápida de informarte</h3>
+            <p>Todo lo que buscas sobre autos</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 h-20"
+            src="https://a-static.besthdwallpaper.com/negro-ford-mustang-de-coches-papel-pintado-3440x1440-26074_15.jpg"
+            alt="Third slide"
+          />
 
+          <Carousel.Caption>
+            <h3>Todo sobre autos</h3>
+            <p>Todo lo que buscas sobre autos</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    // </div>
+  );
+};
 
 export default HeroSlider;
