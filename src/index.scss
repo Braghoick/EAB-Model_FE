@@ -159,11 +159,12 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
 
       &_prev {
         /*Flecha izquierda*/
-        left: 1rem;
+        left: 0rem;
+        
       }
       &_next {
         /*Flecha derecha*/
-        right: 1rem;
+        right: 0rem;
       }
       &:hover {
         color: #f9db6d;
