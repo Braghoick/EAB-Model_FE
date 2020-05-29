@@ -12,10 +12,10 @@ const HeaderNav = () =>{
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="/">Inicio<span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="#landing">Inicio<span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">Destacados</a>
+              <a className="nav-link" href="#destacados">Destacados</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/">Contáctanos</a>

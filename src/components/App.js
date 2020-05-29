@@ -5,9 +5,6 @@ import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
 import SliderParent from "./SliderParent";
 
-
-
-
 class App extends React.Component{
 	render(){
 		return (
@@ -15,12 +12,12 @@ class App extends React.Component{
 			<React.Fragment>
 
 				{/* Seccion de Landing con Slider */}
-				<section class="landing">
+				<section id="landing" class="landing">
 					<HeaderNav fixed="top"/>
-					<HeroSlider />
+					<HeroSlider/>	
 				</section>
 				{/* Seccion de Autos destacados */}
-				<section className="destacados">
+				<section id="destacados" className="destacados">
 					<div className="info">
 					<h1 className="text-center">Destacados</h1>
 					<SliderParent/>
@@ -32,7 +29,6 @@ class App extends React.Component{
 		);
 	}
 }
-
 
 export default App;
 

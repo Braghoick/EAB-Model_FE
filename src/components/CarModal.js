@@ -21,6 +21,7 @@ class CarModal extends React.Component {
         >
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
+      
               <h1>{this.props.data.name}</h1>
             </Modal.Title>
           </Modal.Header>
@@ -51,6 +52,17 @@ class CarModal extends React.Component {
               <p>Gas: {this.props.data.gas}</p>
               <p>Precio aproximado: {this.props.data.price}</p>
             </div>
+      
+              {/* Aqui va el titulo del modal
+                  usar marca y modelo del vehiculo 
+              {this.props.data.name}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4> {this.props.data.brand} </h4>
+            <p>{this.props.data.year}</p>
+            <p>{this.props.data.style}</p>
+      */}
           </Modal.Body>
           <Modal.Footer>
             <a className="btn-modal" target="_blank" href="!#" role="button">Quiero saber más</a>
