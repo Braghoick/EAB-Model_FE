@@ -16,9 +16,6 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
     padding: 0px;
 }
 
-.d-block{  
-    height: 720px; 
-}
 
 .destacados,
 .landing{
@@ -29,8 +26,36 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
 .info{
     padding-top: 10%;
 }
+
+.btn-modal{
+    border-style: none;
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#4d4d4d;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+
+    &:hover {
+        background-color:#f6f6f6;
+    }
+    &:active {
+        position:relative;
+	top:1px;
+    }
+}
+
+.contained-modal-body{
+    
+}
+
 .slider{
-	width: 67%;/*cantidad de items que se muestran horizontalmente */
+	width: 66%;/*cantidad de items que se muestran horizontalmente */
 	overflow: hidden;
 	margin: auto;
     padding: 1rem;
@@ -55,7 +80,7 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
             text-align: center;
             padding: 0px 0px 10px;
             width: 100%;
-            margin: 10px 27px;
+            margin: 10px 25px;
             border-radius: 10px;
             box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.13);
             
@@ -69,7 +94,7 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
     .btn{/*flechas del carrosel*/
         cursor: pointer;
         font-size: 3rem;
-        position: absolute;
+        position: absolute; 
         color:black;
         text-align: center;
 

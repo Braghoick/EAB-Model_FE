@@ -1,9 +1,9 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
 
 const HeroSlider = () =>{
 		return (
-               <Carousel class>
+               <Carousel>
                     
                     <Carousel.Item>
                     <img
