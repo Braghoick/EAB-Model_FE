@@ -41,7 +41,9 @@ class Slider extends React.Component {
                     this.checkButtons(offsetWidthValue, scrollWidthValue);
                     }}
                 >
-                    {"←"}
+                    {
+                        <span class="iconify" data-icon="bi:arrow-left-short" data-inline="false"></span>
+                    }
                 </btn>
                 
                 {/* botón */}
@@ -52,7 +54,9 @@ class Slider extends React.Component {
                     this.checkButtons(offsetWidthValue, scrollWidthValue);
                     }}
                 >
-                    {"→"}
+                    {
+                        <span class="iconify" data-icon="bi:arrow-right-short" data-inline="false"></span>
+                    }
                 </btn>
                 
             </div>

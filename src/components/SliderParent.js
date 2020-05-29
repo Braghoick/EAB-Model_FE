@@ -27,7 +27,7 @@ class SliderParent extends React.Component {
         style: "4x4",
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
-        price: "9.5 Millones aproximadamente",
+        price: "9.5 Millones",
       },
       {
         id: 2,
@@ -37,7 +37,7 @@ class SliderParent extends React.Component {
         style: "Coupe",
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
-        price: "3.5 Millones aproximadamente",
+        price: "3.5 Millones",
       },
       {
         id: 3,
@@ -47,7 +47,7 @@ class SliderParent extends React.Component {
         style: "Hatchback",
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
-        price: "2.5 Millones aproximadamente",
+        price: "2.5 Millones",
       },
       {
         id: 4,
@@ -57,7 +57,37 @@ class SliderParent extends React.Component {
         style: "4x4",
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
-        price: "7.5 Millones aproximadamente",
+        price: "7.5 Millones",
+      },
+      {
+        id: 5,
+        name: "Yaris",
+        brand: "Toyota",
+        year: "2008",
+        style: "Hatchback",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "2.5 Millones",
+      },
+      {
+        id: 6,
+        name: "Yaris",
+        brand: "Toyota",
+        year: "2008",
+        style: "Hatchback",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "2.5 Millones",
+      },
+      {
+        id: 7,
+        name: "Yaris",
+        brand: "Toyota",
+        year: "2008",
+        style: "Hatchback",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "2.5 Millones",
       },
       {
         id: 5,
@@ -144,13 +174,13 @@ class SliderParent extends React.Component {
                   </div>
                   <div class="card-footer">
                     <button
-                      className="btn-danger rounded"
+                      className="btn-modal rounded"
                       onClick={() => {
                         // Aqui se manda la informacion del card al state
                         this.setState({showModal:true, data:value});
                       }}
                     >
-                      Hola
+                      Ver más
                     </button>
                   </div>
                 </div>

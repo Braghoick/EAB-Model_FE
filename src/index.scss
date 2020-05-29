@@ -15,9 +15,11 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
   padding: 0px;
 }
 
+
 .d-block {
   height: 720px;
 }
+
 
 .destacados,
 .landing {
@@ -27,6 +29,33 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
 
 .info {
   padding-top: 10%;
+}
+
+.btn-modal{
+    border-style: none;
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#4d4d4d;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+
+    &:hover {
+        background-color:#f6f6f6;
+    }
+    &:active {
+        position:relative;
+	top:1px;
+    }
+}
+
+.contained-modal-body{
+    
 }
 .slider {
   width: 67%; /*cantidad de items que se muestran horizontalmente */
@@ -141,6 +170,20 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
         border-radius: 10px;
         box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.13);
 
+        .Card{/*El card donde se muestran los carros con la info*/
+            background: #F9DB6D;
+            text-align: center;
+            padding: 0px 0px 10px;
+            width: 100%;
+            margin: 10px 25px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.13);
+            
+            .card_img{/*imagen del carro en el card*/
+                width: 256px;
+                height: 144px;
+                border-radius: 4% 4% 0% 0%;
+            }   
         .card_img {
           /*imagen del carro en el card*/
           width: 60vw;
@@ -149,6 +192,12 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
         }
       }
     }
+    .btn{/*flechas del carrosel*/
+        cursor: pointer;
+        font-size: 3rem;
+        position: absolute; 
+        color:black;
+        text-align: center;
     .btn {
       /*flechas del carrosel*/
       cursor: pointer;
@@ -156,7 +205,6 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
       position: absolute;
       color: black;
       text-align: center;
-
       &_prev {
         /*Flecha izquierda*/
         left: 0rem;
