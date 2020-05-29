@@ -13,12 +13,12 @@ const HeaderNav = () =>{
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="/" style={{color: "#fff"}}>Inicio
+              <a className="nav-link" href="#landing" style={{color: "#fff"}}>Inicio
                 <span className="sr-only" style={{color: "#000"}}>(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" style={{color: "#fff"}} href="/">Destacados</a>
+              <a className="nav-link" style={{color: "#fff"}} href="#destacados">Destacados</a>
             </li>
 
           </ul>
