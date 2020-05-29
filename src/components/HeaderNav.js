@@ -4,7 +4,7 @@ import React from 'react';
 
 const HeaderNav = () =>{
 		return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light  navbar-fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light  navbar-fixed-top" style={{height: '10vh'}}>
         <a className="navbar-brand ml-5" href="/">
           <img src="https://image.flaticon.com/icons/png/512/2922/2922330.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="" />
           Encuentra Autos Baratos

@@ -16,15 +16,40 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
     padding: 0px;
 }
 
-.d-block{  
-    height: 720px; 
+.slider_img{
+    display: block;
+    margin: auto;
 }
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-size: cover;
+  }
+
+  .header .navbar {
+    background-color: transparent !important;
+  }
+
+
+  .caption {
+    position: absolute;
+    z-index: 1000;
+    background-size: cover;
+    background-color: transparent !important;
+    color: white;
+    margin-top: 40vh;
+    margin-left: 20vh;
+
+  }
 
 .destacados,
 .landing{
     width: 100;
     height: 100vh;
 }
+
 
 .info{
     padding-top: 10%;
@@ -89,4 +114,8 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
         pointer-events: none;
         color: rgb(26, 26, 26);
     }
+}
+
+.nav-item{
+    display: block;
 }
