@@ -50,7 +50,7 @@ class SliderParent extends React.Component {
       {
         id: 4,
         name: "Polo",
-        brand: "Fiat",
+        brand: "Volkswagen",
         year: "2008",
         style: "Hatchback",
         transmission: "Manual 5 velocidades",
@@ -69,7 +69,7 @@ class SliderParent extends React.Component {
       },
       {
         id: 6,
-        name: "Gol",
+        name: "Golf",
         brand: "Volkswagen",
         year: "2008",
         style: "Hatchback",
