@@ -6,8 +6,8 @@ import Footer from './Footer'
 
 const AboutUs = () =>{
      return(
-          <div>
-               <Accordion>
+          <div className="accordion">
+               <Accordion >
                          <Accordion.Toggle className="d-flex m-auto" as={Button} variant="link" eventKey="0">
                               Conoce aún más sobre nosotros
                          </Accordion.Toggle>

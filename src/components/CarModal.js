@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 
 // Se importa el componente Modal para mostrar la info
@@ -30,22 +31,24 @@ class CarModal extends React.Component {
           </Modal.Header>
           <Modal.Body className="contained-modal-body">
             <div className="d-flex modalContent">
+              <div className="row">
               <div className="contained-modal-multimedia modalCarousel">
                 {" "}
                 {/*Este es el carrosel del modal donde iran los videos y fotos*/}
-                <Carousel className="carousel carousel-pause-true">
-                  <Carousel.Item>
+                <Carousel className="carousel carousel-pause-true carousel-fade">
+                  <Carousel.Item className="modal-item">
                     {/*Video los ajustes del tamaño del frame se deben de cambiar desde aquí no se puede hacer en el scss*/}
+                    
                     <iframe
-                      width="510" 
-                      height="290"
+                      width="1080" 
+                      height="610"
                       src="https://www.youtube.com/embed/UZdiiavIBsY"
                       frameborder="0"
                       allow="accelerometer; encrypted-media; gyroscope;"
                       allowfullscreen
                     ></iframe>
                   </Carousel.Item>
-                  <Carousel.Item>
+                  <Carousel.Item className="modal-item">
                     {/*Foto*/}
                     <img
                       className="d-block-modal w-100"
@@ -53,7 +56,7 @@ class CarModal extends React.Component {
                       alt="Second slide"
                     />
                   </Carousel.Item>
-                  <Carousel.Item>
+                  <Carousel.Item className="modal-item">
                     {/*Foto*/}
                     <img
                       className="d-block-modal w-100"
@@ -75,8 +78,9 @@ class CarModal extends React.Component {
                 </p>
                 <p>{this.props.data.extra}</p>
                 <p>Precio aproximado: {this.props.data.price}</p>
-              </div>
             </div>
+            </div>
+          </div>
           </Modal.Body>
           <Modal.Footer>
             <a
