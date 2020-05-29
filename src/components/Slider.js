@@ -37,7 +37,7 @@ class Slider extends React.Component {
                     className={`btn btn_prev ${this.state.prevDisable ? "disable" : ""}`} //disable = cuando no se puede desplazar más
                     disabled={this.state.prevDisable}
                     onClick={()=>{
-                    this.refs.scrollLeft -= offsetWidthValue / 3;
+                    this.refs.scrollLeft -= offsetWidthValue / 1;
                     this.checkButtons(offsetWidthValue, scrollWidthValue);
                     }}
                 >
@@ -50,7 +50,7 @@ class Slider extends React.Component {
                 <btn className={`btn btn_next ${this.state.nextDisable ? "disable" : ""}`} //disable = cuando no se puede desplazar más
                     disabled={this.state.nextDisable}
                     onClick={()=>{
-                    this.refs.scrollLeft += offsetWidthValue / 3;
+                    this.refs.scrollLeft += offsetWidthValue / 1;
                     this.checkButtons(offsetWidthValue, scrollWidthValue);
                     }}
                 >
