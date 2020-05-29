@@ -7,9 +7,9 @@ const Footer = () =>{
 
                <div class="container footerContent">
 
-                    <div class="row">
+                    <div class="d-flex row justify-content-center">
                          
-                         <div class="col-md-2 mb-4 text-right logoDer">
+                         <div class="col-md-2 mb-4 mr-5 text-right logoDer">
                                    <img className="logoDer" src={logo} alt="logo"/>
                               </div>
 
