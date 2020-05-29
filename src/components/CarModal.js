@@ -20,12 +20,17 @@ class CarModal extends React.Component {
         >
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
+              {/* Aqui va el titulo del modal
+                  usar marca y modelo del vehiculo */}
               {this.props.data.name}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            {/* Aqui se inserta la informacion del 
+                carro a mostrar */}
             <h4> {this.props.data.brand} </h4>
             <p>{this.props.data.year}</p>
+            <p>{this.props.data.style}</p>
           </Modal.Body>
           <Modal.Footer>
             

@@ -17,6 +17,7 @@ class SliderParent extends React.Component {
   }
 
   render() {
+
     let data = [
       {
         id: 1,
@@ -47,6 +48,66 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "2.5 Millones aproximadamente",
+      },
+      {
+        id: 4,
+        name: "Brandon",
+        brand: "Cisneros",
+        year: "2008",
+        style: "4x4",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "7.5 Millones aproximadamente",
+      },
+      {
+        id: 5,
+        name: "Brandon",
+        brand: "Cisneros",
+        year: "2008",
+        style: "4x4",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "7.5 Millones aproximadamente",
+      },
+      {
+        id: 6,
+        name: "Brandon",
+        brand: "Cisneros",
+        year: "2008",
+        style: "4x4",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "7.5 Millones aproximadamente",
+      },
+      {
+        id: 7,
+        name: "Brandon",
+        brand: "Cisneros",
+        year: "2008",
+        style: "4x4",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "7.5 Millones aproximadamente",
+      },
+      {
+        id: 8,
+        name: "Brandon",
+        brand: "Cisneros",
+        year: "2008",
+        style: "4x4",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "7.5 Millones aproximadamente",
+      },
+      {
+        id: 9,
+        name: "Brandon",
+        brand: "Cisneros",
+        year: "2008",
+        style: "4x4",
+        transmission: "Manual 5 velocidades",
+        gas: "Gasolina",
+        price: "7.5 Millones aproximadamente",
       },
       {
         id: 4,
