@@ -8,7 +8,7 @@ const HeaderNav = () =>{
       
       <nav className="navbar navbar-expand-lg navbar-light bg-light  navbar-fixed-top" style={{height: '10vh'}} >
         <a className="navbar-brand ml-5" style={{color: "#fff"}} href="/">
-          <img src={logo}  height="30" class="d-inline-block align-top mr-2" alt="" />
+          <img src={logo}  height="30" class="d-inline-block align-top logo" alt="" />
         </a>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
