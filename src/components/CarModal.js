@@ -39,11 +39,11 @@ class CarModal extends React.Component {
                   <Carousel.Item className="modal-item">
                     {/*Video los ajustes del tamaño del frame se deben de cambiar desde aquí no se puede hacer en el scss*/}
                     
-                    <iframe className="iframe-video"
+                    <iframe className="container-video iframe-video"
                       width="1080" 
                       height="610"
                       src="https://www.youtube.com/embed/UZdiiavIBsY"
-                      frameborder="2"
+                      frameborder="0"
                       allow="accelerometer; encrypted-media; gyroscope;"
                       allowfullscreen
                     ></iframe>
