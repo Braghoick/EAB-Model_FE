@@ -4,17 +4,23 @@ import React from 'react';
 import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
 import SliderParent from "./SliderParent";
+import {Button, Modal} from 'react-bootstrap';
+import AboutUs from './AboutUs';
+import Caption from './Caption'
 
 class App extends React.Component{
 	render(){
 		return (
 			
 			<React.Fragment>
-
-				{/* Seccion de Landing con Slider */}
-				<section id="landing" class="landing">
-					<HeaderNav fixed="top"/>
-					<HeroSlider/>	
+				<section className="landing">
+				<header className="header">
+					<HeaderNav />
+				</header>
+					<caption className="caption">
+							<Caption />
+					</caption>
+					<HeroSlider />
 				</section>
 				{/* Seccion de Autos destacados */}
 				<section id="destacados" className="destacados">
@@ -23,7 +29,6 @@ class App extends React.Component{
 					<SliderParent/>
 					</div>
 				</section>
-
 			</React.Fragment>
 
 		);
