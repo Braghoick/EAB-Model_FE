@@ -33,21 +33,32 @@ class CarModal extends React.Component {
               <div className="contained-modal-multimedia modalCarousel">
                 {" "}
                 {/*Este es el carrosel del modal donde iran los videos y fotos*/}
-                <Carousel>
+                <Carousel className="carousel carousel-pause-true">
                   <Carousel.Item>
-                    {/*Video*/}
+                    {/*Video los ajustes del tamaño del frame se deben de cambiar desde aquí no se puede hacer en el scss*/}
+                    <iframe
+                      width="510" 
+                      height="290"
+                      src="https://www.youtube.com/embed/UZdiiavIBsY"
+                      frameborder="0"
+                      allow="accelerometer; encrypted-media; gyroscope;"
+                      allowfullscreen
+                    ></iframe>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    {/*Foto*/}
                     <img
                       className="d-block-modal w-100"
-                      src="https://raceandshop.com.mx/wp-content/uploads/2019/05/AE8.jpg"
-                      alt="First slide"
+                      src="https://cdn.motor1.com/images/mgl/WpY43/s3/plymouth-xnr-concept.jpg"
+                      alt="Second slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     {/*Foto*/}
                     <img
                       className="d-block-modal w-100"
-                      src="https://s1.1zoom.me/big0/208/Ferrari_Sunrises_and_442416.jpg"
-                      alt="Second slide"
+                      src="https://i.ytimg.com/vi/Dv8ffn8NpsY/maxresdefault.jpg"
+                      alt="Third slide"
                     />
                   </Carousel.Item>
                 </Carousel>
@@ -62,6 +73,7 @@ class CarModal extends React.Component {
                   y trae llantas nuevas no cambio, solo vendo, ando buscando
                   pick up mas moderna, se da vuelto a favor.
                 </p>
+                <p>{this.props.data.extra}</p>
                 <p>Precio aproximado: {this.props.data.price}</p>
               </div>
             </div>
