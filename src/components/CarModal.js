@@ -6,9 +6,11 @@ import { Modal } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 
 class CarModal extends React.Component {
+  //no remover, crea los props debidos para el funcionamiento del FrontEnd
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <div className="carInfo">

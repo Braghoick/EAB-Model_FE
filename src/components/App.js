@@ -4,7 +4,6 @@ import React from 'react';
 import HeaderNav from './HeaderNav';
 import HeroSlider from './HeroSlider';
 import SliderParent from "./SliderParent";
-import {Button, Modal} from 'react-bootstrap';
 import AboutUs from './AboutUs';
 import Caption from './Caption'
 
@@ -13,7 +12,7 @@ class App extends React.Component{
 		return (
 			
 			<React.Fragment>
-				<section className="landing">
+				<section  id="landing" className="landing">
 				<header className="header">
 					<HeaderNav />
 				</header>
@@ -29,6 +28,7 @@ class App extends React.Component{
 					<SliderParent/>
 					</div>
 				</section>
+				<AboutUs />
 			</React.Fragment>
 
 		);
