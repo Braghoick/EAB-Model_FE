@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 
 // Se importa el componente Modal para mostrar la info
@@ -29,12 +30,12 @@ class CarModal extends React.Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body className="contained-modal-body">
-            <div className="d-flex row">
-              <div className="contained-modal-multimedia col">
+            <div className="d-flex modalContent">
+              <div className="contained-modal-multimedia modalCarousel">
                 {" "}
                 {/*Este es el carrosel del modal donde iran los videos y fotos*/}
-                <Carousel className="carousel carousel-pause-true">
-                  <Carousel.Item>
+                <Carousel className="carousel carousel-pause-true carousel-fade">
+                  <Carousel.Item className="modal-item">
                     {/*Video los ajustes del tamaño del frame se deben de cambiar desde aquí no se puede hacer en el scss*/}
                     <iframe
                       width="510" 
@@ -45,7 +46,7 @@ class CarModal extends React.Component {
                       allowfullscreen
                     ></iframe>
                   </Carousel.Item>
-                  <Carousel.Item>
+                  <Carousel.Item className="modal-item">
                     {/*Foto*/}
                     <img
                       width="510" 
@@ -57,15 +58,20 @@ class CarModal extends React.Component {
                   </Carousel.Item>
                 </Carousel>
               </div>
-              <div className="contained-modal-info col ml-5">
+              <div className="contained-modal-info ml-5 modalInfo">
                 {/*Información tecnica del carro*/}
                 <p>Estilo: {this.props.data.style}</p>
                 <p>Trasmision: {this.props.data.transmission}</p>
                 <p>Gas: {this.props.data.gas}</p>
+                <p>
+                  Vehiculo cuenta con radio AUX/USB/BT de pantalla. Aros de lujo
+                  y trae llantas nuevas no cambio, solo vendo, ando buscando
+                  pick up mas moderna, se da vuelto a favor.
+                </p>
                 <p>{this.props.data.extra}</p>
                 <p>Precio aproximado: {this.props.data.price}</p>
-              </div>
             </div>
+          </div>
           </Modal.Body>
           <Modal.Footer>
             <a

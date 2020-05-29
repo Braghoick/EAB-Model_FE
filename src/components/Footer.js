@@ -5,17 +5,16 @@ const Footer = () =>{
      return(
           <footer class="page-footer font-small special-color-dark pt-4">
 
-               <div class="container">
+               <div class="container footerContent">
 
                     <div class="row">
                          
-                         <div class="col-md-3 mb-4 text-right">
-                                   <img src={logo} alt="logo"/>
+                         <div class="col-md-2 mb-4 text-right logoDer">
+                                   <img className="logoDer" src={logo} alt="logo"/>
                               </div>
 
-                         <div class="col-md-6 mb-4">
-
-                              <form class="form-inline">
+                         <div class="form-search col-md-6 mb-4">
+                              <form class="form-inline footerForm">
                                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
                                    aria-label="Search" />
                                    <i class="fas fa-search" aria-hidden="true"></i>
@@ -23,8 +22,8 @@ const Footer = () =>{
 
                          </div>
 
-                         <div class="col-md-3 mb-4 text-right">
-                              <img src={logo} alt="logo"/>
+                         <div class="col-md-2 mb-4 text-right">
+                              <img className="logoIzq" src={logo} alt="logo"/>
                          </div>
                     </div>
                </div>

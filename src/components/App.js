@@ -17,7 +17,7 @@ class App extends React.Component{
 					<HeaderNav />
 				</header>
 					<caption className="caption">
-							<Caption />
+						<Caption />
 					</caption>
 					<HeroSlider />
 				</section>
