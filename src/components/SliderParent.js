@@ -103,7 +103,7 @@ class SliderParent extends React.Component {
         name: "Mustang",
         brand: "Ford",
         year: "1967",
-        style: "Classic",
+        style: "Classic Muscle Car",
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "7.5 Millones aproximadamente",
