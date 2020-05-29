@@ -7,7 +7,7 @@ const Footer = () =>{
 
                <div class="container footerContent">
 
-                    <div class="col">
+                    <div class="row">
                          
                          <div class="col-md-2 mb-4 text-right logoDer">
                                    <img className="logoDer" src={logo} alt="logo"/>
