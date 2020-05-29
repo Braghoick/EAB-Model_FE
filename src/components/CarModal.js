@@ -31,7 +31,7 @@ class CarModal extends React.Component {
           </Modal.Header>
           <Modal.Body className="contained-modal-body">
             <div className="d-flex modalContent">
-              <div className="contained-modal-multimedia modalCarousel">
+              <div className="contained-modal-multimedia">
                 {" "}
                 {/*Este es el carrosel del modal donde iran los videos y fotos*/}
                 <Carousel className="carousel carousel-pause-true carousel-fade">
