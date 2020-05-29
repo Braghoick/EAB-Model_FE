@@ -16,7 +16,7 @@ class App extends React.Component{
 		return (
       // agregar el carrusel donde deba estar
 			<React.Fragment>
-				<section class="landing">
+				<section className="landing">
 				<header className="header">
 					<HeaderNav />
 				</header>
@@ -40,8 +40,8 @@ class App extends React.Component{
 						</Modal>
 					{/* ************************************************** */}
 					</div>
-					<AboutUs />
 				</section>
+					<AboutUs />
 			</React.Fragment>
 		);
 	}

@@ -2,20 +2,21 @@ import React from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Footer from './Footer'
 
 const AboutUs = () =>{
      return(
-
           <div>
-               <Accordion defaultActiveKey="1">
+               <Accordion>
                          <Accordion.Toggle className="d-flex m-auto" as={Button} variant="link" eventKey="0">
-                              Conoce aun mas sobre nosotros
+                              Conoce aún más sobre nosotros
                          </Accordion.Toggle>
-                    <Card>
+ 
                     <Accordion.Collapse className="about_us_body" eventKey="0">
-                         <Card.Body>Hello! I'm the body</Card.Body>
+                         <Card.Body>
+                              <Footer />
+                         </Card.Body>
                     </Accordion.Collapse>
-                    </Card>
                </Accordion>
           </div>
      )
