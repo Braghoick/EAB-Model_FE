@@ -2,8 +2,8 @@
 
 // Aqui se modifica con sass de forma global
 
-$body-bg: whitesmoke; /*fondo*/
-$body-color: rgb(20, 20, 20); /*color de textos global*/
+$body-bg: darken(#464D77, 20%); /*fondo*/
+$body-color: rgb(255, 255, 255); /*color de textos global*/
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -15,11 +15,34 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
   padding: 0px;
 }
 
-
-.d-block {
-  height: 720px;
+.slider_img{
+    display: block;
+    margin: auto;
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-size: cover;
+    text-shadow: 0px 0px rgb(0, 0, 0)
+  }
+
+  .header .navbar {
+    background-color: transparent !important;
+  }
+
+
+  .caption {
+    position: absolute;
+    z-index: 1000;
+    background-size: cover;
+    background-color: transparent !important;
+    color: white;
+    margin-top: 15vh;
+    margin-left: 20vh;
+
+  }
 
 .destacados,
 .landing {
@@ -31,33 +54,33 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
   padding-top: 10%;
 }
 
-.btn-modal{
-    border-style: none;
-	background-color:#ffffff;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#4d4d4d;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-
-    &:hover {
-        background-color:#f6f6f6;
-    }
-    &:active {
-        position:relative;
-	top:1px;
-    }
+.modal-title,
+.contained-modal-info{
+  color: #000000;
 }
 
-<<<<<<< HEAD
-=======
-.contained-modal-body{
-    
+.btn-modal {
+  border-style: none;
+  background-color: #36827f;
+  border-radius: 6px;
+  border: 1px solid darken(#36827f, 3%);
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+
+  &:hover {
+    color: #36827f;
+    background-color: #f6f6f6;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
 }
 .slider {
   width: 67%; /*cantidad de items que se muestran horizontalmente */
@@ -104,7 +127,7 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
     cursor: pointer;
     font-size: 3rem;
     position: absolute;
-    color: black;
+    color: #f9db6d;
     text-align: center;
 
     &_prev {
@@ -116,7 +139,7 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
       right: 14rem;
     }
     &:hover {
-      color: #f9db6d;
+      color: #36827f;
     }
   }
 
@@ -124,10 +147,9 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
     /*Cuando no puede desplazar más el boton cambia a disable*/
     opacity: 0.2;
     pointer-events: none;
-    color: rgb(26, 26, 26);
+    color: darken(#f9db6d, 3%);
   }
 }
->>>>>>> 6657d92f61f1ebca8e4b96020c2e03953c868cd0
 
 @media screen and (max-width: 361px) {
   .destacados,
@@ -173,60 +195,73 @@ $body-color: rgb(20, 20, 20); /*color de textos global*/
         border-radius: 10px;
         box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.13);
 
-        .Card{/*El card donde se muestran los carros con la info*/
-            background: #F9DB6D;
-            text-align: center;
-            padding: 0px 0px 10px;
-            width: 100%;
-            margin: 10px 25px;
-            border-radius: 10px;
-            box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.13);
-            
-            .card_img{/*imagen del carro en el card*/
-                width: 256px;
-                height: 144px;
-                border-radius: 4% 4% 0% 0%;
-            }   
-        .card_img {
-          /*imagen del carro en el card*/
-          width: 60vw;
-          height: 40vh;
-          border-radius: 4% 4% 0% 0%;
+        .Card {
+          /*El card donde se muestran los carros con la info*/
+          background: #f9db6d;
+          text-align: center;
+          padding: 0px 0px 10px;
+          width: 100%;
+          margin: 10px 25px;
+          border-radius: 10px;
+          box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.13);
+
+          .card_img {
+            /*imagen del carro en el card*/
+            width: 256px;
+            height: 144px;
+            border-radius: 4% 4% 0% 0%;
+          }
+          .card_img {
+            /*imagen del carro en el card*/
+            width: 60vw;
+            height: 40vh;
+            border-radius: 4% 4% 0% 0%;
+          }
+        }
+      }
+      .btn {
+        /*flechas del carrosel*/
+        cursor: pointer;
+        font-size: 3rem;
+        position: absolute;
+        color: #f9db6d;
+        text-align: center;
+
+          &_prev {
+            /*Flecha izquierda*/
+            left: 0rem;
+          }
+          &_next {
+            /*Flecha derecha*/
+            right: 0rem;
+          }
+          &:hover {
+            color: #36827f;
+          }
+        }
+
+        .disable {
+          /*Cuando no puede desplazar más el boton cambia a disable*/
+          opacity: 0.2;
+          pointer-events: none;
+          color: rgb(26, 26, 26);
         }
       }
     }
-    .btn{/*flechas del carrosel*/
-        cursor: pointer;
-        font-size: 3rem;
-        position: absolute; 
-        color:black;
-        text-align: center;
-    .btn {
-      /*flechas del carrosel*/
-      cursor: pointer;
-      font-size: 3rem;
-      position: absolute;
-      color: black;
-      text-align: center;
-      &_prev {
-        /*Flecha izquierda*/
-        left: 0rem;
-        
-      }
-      &_next {
-        /*Flecha derecha*/
-        right: 0rem;
-      }
-      &:hover {
-        color: #f9db6d;
-      }
-    }
-
-    .disable {
-      /*Cuando no puede desplazar más el boton cambia a disable*/
-      opacity: 0.2;
-      pointer-events: none;
-      color: rgb(26, 26, 26);
-    }
   }
+
+.nav-item{
+    display: block;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.form-inline{
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav-auth{
+    margin-left: 110vh;
 }
