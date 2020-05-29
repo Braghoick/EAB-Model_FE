@@ -27,6 +27,8 @@ class SliderParent extends React.Component {
         gas: "Gasolina",
         price: "9.5 Millones",
         extra: "Vehiculo cuenta con radio AUX/USB/BT de pantalla. Aros de lujo y trae llantas nuevas no cambio, solo vendo, ando buscando pick up mas moderna, se da vuelto a favor.",
+        url: "https://autopunto.net/images/vehiculos/toyota/pickup/hilux%202010/1.jpg",
+        video: "https://www.youtube.com/embed/YnJR0ZRRlFQ"
       },
       {
         id: 2,
@@ -37,6 +39,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "3.5 Millones",
+        url: "https://mycarboard.com/wp-content/uploads/2018/02/AwesomeAmazingGreat-2000-Honda-Civic-Si-2000-honda-civic-si-2017-20182018-201920172018.jpg",
+        video: "https://www.youtube.com/embed/4NlnuK9Nbms"
       },
       {
         id: 3,
@@ -47,6 +51,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "2.5 Millones",
+        url: "https://pictures.topspeed.com/IMG/jpg/200802/2008-toyota-yaris-sr.jpg",
+        video: "https://www.youtube.com/embed/CAyIaQSMuns"
       },
       {
         id: 4,
@@ -57,6 +63,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "7.5 Millones",
+        url: "https://resources.carsguide.com.au/volkswagen-polo-beats-2019-tw-1001x565-(1).jpg",
+        video:  "https://www.youtube.com/embed/xokJpil5oLQ"
       },
       {
         id: 5,
@@ -67,6 +75,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "2.5 Millones",
+        url:"https://upload.wikimedia.org/wikipedia/commons/d/de/2008-2010_Toyota_Corolla_Altis_%28ZRE142R%29_1.6_sedan_%282017-11-28%29_01.jpg",
+        video: "https://www.youtube.com/embed/RQ-26cOC5TY"
       },
       {
         id: 6,
@@ -77,6 +87,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "2.5 Millones",
+        url: "https://www.coches.com/fotos_historicas/volkswagen/Gol-2008/volkswagen_gol-2008_r5.jpg",
+        video: "https://www.youtube.com/embed/-SZSZqtF8Fk"
       },
       {
         id: 7,
@@ -87,6 +99,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "2.5 Millones",
+        url: "https://lh3.googleusercontent.com/proxy/ZCP7sCFIBwK_5ensoJa2mzzXOTTM9SbMx7DOt1TdjqxUi17BMCiojqdHUSEcpkVtldiQufKNa6kZrmkegj6l_qGMilN_4TeIRsdDCWtaGqqx4yZaL0rr1R2xd7K0mcNvGABhXOJGuYsrPlb7rT76rf8",
+        video: "https://www.youtube.com/embed/wWoFmhmGX70"
       },
       {
         id: 8,
@@ -97,6 +111,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "7.5 Millones aproximadamente",
+        url:"https://cdn.motor1.com/images/mgl/ALNoL/s3/2003-bmw-m3-csl.jpg",
+        video: "https://www.youtube.com/embed/t6XcYrqabFM"
       },
       {
         id: 9,
@@ -107,6 +123,8 @@ class SliderParent extends React.Component {
         transmission: "Manual 5 velocidades",
         gas: "Gasolina",
         price: "7.5 Millones aproximadamente",
+        url:"https://i.pinimg.com/originals/22/0e/f3/220ef3e8b642765e5f2dcaf8ae52e1a1.jpg",
+        video: "https://www.youtube.com/embed/9eSHYKfwAg4"
       },
     ];
 
@@ -123,7 +141,7 @@ class SliderParent extends React.Component {
                   <img
                     className="card_img"
                     alt=" "
-                    src="https://cnet2.cbsistatic.com/img/lSnyuIPjsqrc5URVmbSYNf2g0cw=/1200x675/2019/11/07/eafc3243-f819-4cf4-934f-73388b0906c8/rs-ford-mustang-mache-36.jpg"
+                    src={value.url}
                   />
                   <div className="card_body">
                     <h3 className="card_title mt-3" style={{color: '#202337'}}>

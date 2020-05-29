@@ -39,7 +39,7 @@ class CarModal extends React.Component {
                     <iframe
                       width="510" 
                       height="290"
-                      src="https://www.youtube.com/embed/UZdiiavIBsY"
+                      src={this.props.data.video} 
                       frameborder="0"
                       allow="accelerometer; encrypted-media; gyroscope;"
                       allowfullscreen
@@ -48,16 +48,10 @@ class CarModal extends React.Component {
                   <Carousel.Item>
                     {/*Foto*/}
                     <img
+                      width="510" 
+                      height="290"
                       className="d-block-modal w-100"
-                      src="https://cdn.motor1.com/images/mgl/WpY43/s3/plymouth-xnr-concept.jpg"
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    {/*Foto*/}
-                    <img
-                      className="d-block-modal w-100"
-                      src="https://i.ytimg.com/vi/Dv8ffn8NpsY/maxresdefault.jpg"
+                      src={this.props.data.url} 
                       alt="Third slide"
                     />
                   </Carousel.Item>
