@@ -5,19 +5,17 @@ import Slider from "./Slider";
 // Se importa el modal para mostrar la informacion de los carros
 import CarModal from "./CarModal";
 
-
 class SliderParent extends React.Component {
   // Constructor con estado para el modal
   constructor() {
     super();
     this.state = {
       showModal: false,
-      data:{}
+      data: {},
     };
   }
 
   render() {
-
     let data = [
       {
         id: 1,
@@ -90,36 +88,6 @@ class SliderParent extends React.Component {
         price: "2.5 Millones",
       },
       {
-        id: 5,
-        name: "Brandon",
-        brand: "Cisneros",
-        year: "2008",
-        style: "4x4",
-        transmission: "Manual 5 velocidades",
-        gas: "Gasolina",
-        price: "7.5 Millones aproximadamente",
-      },
-      {
-        id: 6,
-        name: "Brandon",
-        brand: "Cisneros",
-        year: "2008",
-        style: "4x4",
-        transmission: "Manual 5 velocidades",
-        gas: "Gasolina",
-        price: "7.5 Millones aproximadamente",
-      },
-      {
-        id: 7,
-        name: "Brandon",
-        brand: "Cisneros",
-        year: "2008",
-        style: "4x4",
-        transmission: "Manual 5 velocidades",
-        gas: "Gasolina",
-        price: "7.5 Millones aproximadamente",
-      },
-      {
         id: 8,
         name: "Brandon",
         brand: "Cisneros",
@@ -131,16 +99,6 @@ class SliderParent extends React.Component {
       },
       {
         id: 9,
-        name: "Brandon",
-        brand: "Cisneros",
-        year: "2008",
-        style: "4x4",
-        transmission: "Manual 5 velocidades",
-        gas: "Gasolina",
-        price: "7.5 Millones aproximadamente",
-      },
-      {
-        id: 4,
         name: "Brandon",
         brand: "Cisneros",
         year: "2008",
@@ -177,7 +135,7 @@ class SliderParent extends React.Component {
                       className="btn-modal rounded"
                       onClick={() => {
                         // Aqui se manda la informacion del card al state
-                        this.setState({showModal:true, data:value});
+                        this.setState({ showModal: true, data: value });
                       }}
                     >
                       Ver más
@@ -186,7 +144,8 @@ class SliderParent extends React.Component {
                 </div>
               </div>
             );
-          })} {/* Aqui termina el metodo .map */}
+          })}{" "}
+          {/* Aqui termina el metodo .map */}
           {/* Aqui se llama al modal y se manda el estado
               para abrirlo ademas de la info que debe mostrar */}
           <CarModal
