@@ -31,18 +31,16 @@ class CarModal extends React.Component {
           </Modal.Header>
           <Modal.Body className="contained-modal-body">
             <div className="d-flex modalContent">
-              <div className="row">
               <div className="contained-modal-multimedia modalCarousel">
                 {" "}
                 {/*Este es el carrosel del modal donde iran los videos y fotos*/}
                 <Carousel className="carousel carousel-pause-true carousel-fade">
                   <Carousel.Item className="modal-item">
                     {/*Video los ajustes del tamaño del frame se deben de cambiar desde aquí no se puede hacer en el scss*/}
-                    
-                    <iframe className="container-video iframe-video"
-                      width="1080" 
-                      height="610"
-                      src="https://www.youtube.com/embed/UZdiiavIBsY"
+                    <iframe
+                      width="510" 
+                      height="290"
+                      src={this.props.data.video} 
                       frameborder="0"
                       allow="accelerometer; encrypted-media; gyroscope;"
                       allowfullscreen
@@ -51,16 +49,10 @@ class CarModal extends React.Component {
                   <Carousel.Item className="modal-item">
                     {/*Foto*/}
                     <img
+                      width="510" 
+                      height="290"
                       className="d-block-modal w-100"
-                      src="https://cdn.motor1.com/images/mgl/WpY43/s3/plymouth-xnr-concept.jpg"
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item className="modal-item">
-                    {/*Foto*/}
-                    <img
-                      className="d-block-modal w-100"
-                      src="https://i.ytimg.com/vi/Dv8ffn8NpsY/maxresdefault.jpg"
+                      src={this.props.data.url} 
                       alt="Third slide"
                     />
                   </Carousel.Item>
@@ -78,7 +70,6 @@ class CarModal extends React.Component {
                 </p>
                 <p>{this.props.data.extra}</p>
                 <p>Precio aproximado: {this.props.data.price}</p>
-            </div>
             </div>
           </div>
           </Modal.Body>
