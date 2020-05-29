@@ -31,7 +31,7 @@ class CarModal extends React.Component {
                 {" "}
                 {/*Este es el carrosel del modal donde iran los videos y fotos*/}
                 <Carousel>
-                  <Carousel.Item>
+                  <Carousel.Item className="modal-item">
                     {/*Video*/}
                     <img
                       className="d-block-modal w-100"
@@ -39,7 +39,7 @@ class CarModal extends React.Component {
                       alt="First slide"
                     />
                   </Carousel.Item>
-                  <Carousel.Item>
+                  <Carousel.Item className="modal-item">
                     {/*Foto*/}
                     <img
                       className="d-block-modal w-100"
@@ -49,7 +49,8 @@ class CarModal extends React.Component {
                   </Carousel.Item>
                 </Carousel>
               </div>
-              <div className="contained-modal-info col ml-5">
+              <div className="row">
+              <div className="contained-modal-info ml-5">
                 {/*Información tecnica del carro*/}
                 <p>Estilo: {this.props.data.style}</p>
                 <p>Trasmision: {this.props.data.transmission}</p>
@@ -59,6 +60,7 @@ class CarModal extends React.Component {
                 </p>
                 <p>Precio aproximado: {this.props.data.price}</p>
               </div>
+            </div>
             </div>
           </Modal.Body>
           <Modal.Footer>

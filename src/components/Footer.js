@@ -9,12 +9,11 @@ const Footer = () =>{
 
                     <div class="row">
                          
-                         <div class="col-md-3 mb-4 text-right">
+                         <div class="col-md-2 mb-4 text-right">
                                    <img src={logo} alt="logo"/>
                               </div>
 
-                         <div class="col-md-6 mb-4">
-
+                         <div class="form-search col-md-4 mb-4">
                               <form class="form-inline">
                                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
                                    aria-label="Search" />
@@ -23,7 +22,7 @@ const Footer = () =>{
 
                          </div>
 
-                         <div class="col-md-3 mb-4 text-right">
+                         <div class="col-md-2 mb-4 text-right">
                               <img src={logo} alt="logo"/>
                          </div>
                     </div>
