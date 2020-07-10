@@ -7,10 +7,8 @@ import { Modal } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 
 class CarModal extends React.Component {
-  //no remover, crea los props debidos para el funcionamiento del FrontEnd
-  constructor(props) {
-    super(props);
-  }
+
+  
 
   render() {
     return (
@@ -21,63 +19,59 @@ class CarModal extends React.Component {
           aria-labelledby="contained-modal-title-vcenter"
           centered
         >
+          {/* {console.log(this.props.estilo)} */}
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
               <h1>
-                {this.props.data.brand} {this.props.data.name}{" "}
-                {this.props.data.year}
+                {this.props.data.marca} {this.props.data.modelo}{" "}
+                {this.props.data.anio}
               </h1>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body className="contained-modal-body">
             <div className="d-flex modalContent">
-              <div className="contained-modal-multimedia">
+              <div className="contained-modal-multimedia col-5">
                 {" "}
                 {/*Este es el carrosel del modal donde iran los videos y fotos*/}
                 <Carousel className="carousel carousel-pause-true carousel-fade">
                   <Carousel.Item className="modal-item">
                     {/*Video los ajustes del tamaño del frame se deben de cambiar desde aquí no se puede hacer en el scss*/}
                     <iframe
-                      width="510" 
+                      width="510"
                       height="290"
-                      src={this.props.data.video} 
-                      frameborder="0"
+                      src={this.props.data.urlVideo}
+                      frameBorder="0"
                       allow="accelerometer; encrypted-media; gyroscope;"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </Carousel.Item>
                   <Carousel.Item className="modal-item">
                     {/*Foto*/}
                     <img
-                      width="510" 
+                      width="510"
                       height="290"
                       className="d-block-modal w-100"
-                      src={this.props.data.url} 
+                      src={this.props.data.urlImagen}
                       alt="Third slide"
                     />
                   </Carousel.Item>
                 </Carousel>
               </div>
-              <div className="contained-modal-info ml-5 modalInfo">
+              <div className="contained-modal-info pl-5 modalInfo col-7">
                 {/*Información tecnica del carro*/}
-                <p>Estilo: {this.props.data.style}</p>
-                <p>Trasmision: {this.props.data.transmission}</p>
-                <p>Gas: {this.props.data.gas}</p>
-                <p>
-                  Vehiculo cuenta con radio AUX/USB/BT de pantalla. Aros de lujo
-                  y trae llantas nuevas no cambio, solo vendo, ando buscando
-                  pick up mas moderna, se da vuelto a favor.
-                </p>
-                <p>{this.props.data.extra}</p>
-                <p>Precio aproximado: {this.props.data.price}</p>
+                <p>Estilo: {this.props.estilo}</p>
+                <p>Motor: {this.props.data.motor}</p>
+                <p>Trasmisión: {this.props.data.transmision}</p>
+                <p>Gas: {this.props.data.combustible}</p>
+                
+                <p>Precio aproximado: {this.props.data.precio}</p>
+              </div>
             </div>
-          </div>
           </Modal.Body>
           <Modal.Footer>
             <a
               className="btn-modal"
-              target="_blank"
-              href="https://www.encuentra24.com/costa-rica-es/autos-usados?q=keyword.yaris|f_year.2008-2009|f_currency.CRC"
+              href={this.props.data.urlCompra}
               role="button"
             >
               Quiero saber más
